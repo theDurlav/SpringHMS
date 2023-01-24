@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="container" >
+    <div class="p-4 my-4 bg-light rounded-3">
+        <h1>RAJHANS HOTEL</h1>
+        <h3>Hotel Managment System</h3>
+        <br>
+        <a th:href="@{/logout}" class="btn btn-outline-danger btn-lg">logout</a>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="text-lg-start">Customer</h2>
+                <ul>
+                    <li>Add Customer</li>
+                    <li>Update Customer</li>
+                    <li>Delete Customer</li>
+                    <li>List Customer</li>
+                    <li>Maintain Order</li>
+                    <li>Checkout</li>
+                </ul>
+            <p><a th:href="@{/customers}" target="_blank" class="btn btn-success ">Action Link &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-lg-start">Rooms</h2>
+                <ul>
+                    <li>List Room</li>
+                    <li>Add Room</li>
+                    <li>Update Room</li>
+                    <li>Delete Room</li>
+                </ul>
+            <p><a th:href="@{/rooms}" target="_blank" class="btn btn-success ">Action Link &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-lg-start">Order</h2>
+                <ul>
+                    <li>List Order</li>
+                    <li>Add Order</li>
+                    <li>Update Order</li>
+                    <li>Delete Order</li>
+                </ul>
+            <p><a th:href="@{/orders}" target="_blank" class="btn btn-success ">Action Link &raquo;</a></p>
+        </div>
+    </div>
+    <hr>
+</div>
+</div>
+</body>
+</html>
